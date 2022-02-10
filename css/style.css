@@ -1,0 +1,43 @@
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+body{
+    font-family: "맑은 고딕";
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+}
+.nav{
+    margin: 30px;
+}
+.nav> li{
+    float: left;
+    margin-right: 10px;
+    position: relative;/*서브메뉴 기준*/
+}
+.nav> li> a{
+    display: block;
+    padding: 10px 30px;
+    background-color: yellow;
+}
+.nav> li:hover> a{
+    background-color: pink;
+}
+
+.sub a{
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    background-color: green;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+.sub a:hover{
+    background-color: purple;
+}
+.sub{
+    position: absolute;
+    width: 100%;/*li 크기만큼 커짐*/
+    display: none;
+}
+/*서브메뉴를 나타나게 만드는 것은 제이쿼리에서 해줍니다!*/
