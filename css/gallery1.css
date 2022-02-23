@@ -1,0 +1,64 @@
+*{margin: 0; padding: 0;}
+.slider{
+			width: 1130px;
+			margin: 100px auto;
+}
+.slider .slick-slide> div{
+	position: relative;
+}
+.slider .slick-slide div img{
+	display: block;
+	width: 100%;
+}
+
+/* 시작 이미지 꾸미기 */
+
+
+/*이동버튼 꾸미기*/
+.slider .slick-prev:before,.slider  .slick-next:before{
+	display: none;
+}
+.slider .slick-prev,.slider  .slick-next{
+	width:42px;
+	height:22px;
+	z-index: 2;
+}
+.slider .slick-prev{
+	background:url(../images/prev2.png) no-repeat;
+	left: 2px;
+	z-index: 2;
+	top: 650px;
+	display: block;
+}
+.slider .slick-prev:hover{
+	background:url(../images/prev_hover2.png) no-repeat;
+}
+.slider .slick-next{
+	background:url(../images/next2.png) no-repeat;
+	right:2px;
+	top: 650px;
+	display: block;
+}
+.slider .slick-next:hover{
+	background:url(../images/next_hover2.png) no-repeat;
+}
+
+/*블릿버튼 꾸미기*/
+.slider .slick-dots li button:before{
+	content:'';	
+}
+.slider .slick-dots li button{
+	width:10px;
+	height:10px;
+	padding:0;
+	background:#f3b364;;
+	border-radius:50%;
+	opacity: 0.5;
+	text-align: center;
+}
+.slider .slick-dots li.slick-active button{
+	background:#eb8f22;;
+	opacity:1
+}
+
+
